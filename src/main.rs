@@ -203,8 +203,8 @@ fn main() -> ! {
 
                     for row in 0..5 {
                         for col in 0..5 {
-                            let x = 4 - row as i32 - char_x_offset; 
-                            let y = 4 - col;                        
+                            let x = 4 - col as i32 - char_x_offset; 
+                            let y = 4 - row;                        
                             if x >= 0 && x < 5 {
                                 led_matrix[y as usize][x as usize] =
                                     if (letter_pattern[4 - row] & (1 << col)) != 0 { 1 } else { 0 };
