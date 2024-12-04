@@ -171,7 +171,7 @@ const LETTERS: [[u8; 5]; 26] = [
 fn main() -> ! {
     rtt_init_print!();
 
-    let display_text = b"HELLO";
+    let display_text = b"RUST";
 
     let board = Board::take().unwrap();
     let mut timer = Timer::new(board.TIMER0);
